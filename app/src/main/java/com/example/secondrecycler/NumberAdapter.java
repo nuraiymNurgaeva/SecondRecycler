@@ -11,14 +11,15 @@ import java.util.ArrayList;
 public class NumberAdapter extends RecyclerView.Adapter<NumberViewHolder> {
 
     private ArrayList<String> numbers = new ArrayList<>();
-    public NumberAdapter(ArrayList<String>numbers){
-        this.numbers=numbers;
+
+    public NumberAdapter(ArrayList<String> numbers) {
+        this.numbers = numbers;
     }
 
     @NonNull
     @Override
     public NumberViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new NumberViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_number,parent,false));
+        return new NumberViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_number, parent, false));
     }
 
     @Override

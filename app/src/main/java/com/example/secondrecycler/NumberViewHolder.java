@@ -8,12 +8,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class NumberViewHolder extends RecyclerView.ViewHolder {
     private TextView textView;
+
     public NumberViewHolder(@NonNull View itemView) {
         super(itemView);
-        textView=itemView.findViewById(R.id.textview_number);
+        textView = itemView.findViewById(R.id.textview_number);
     }
 
-    public void bind(String number){
+    public void bind(String number) {
         textView.setText(number);
     }
 }
